@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>Form validation with javascript</h1>
+    <form id="form">
+      <div class="field">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter an email"
+          required
+        />
+        <span class="error" aria-live="polite"></span>
+      </div>
+      <div class="field">
+        <label for="country">Country</label>
+        <input
+          type="text"
+          id="country"
+          name="country"
+          placeholder="Enter a country"
+          pattern="^[^0-9]+$"
+          required
+        />
+        <span class="error" aria-live="polite"></span>
+      </div>
+      <div class="field">
+        <label for="zip-code">Zip Code</label>
+        <input
+          type="text"
+          id="zip-code"
+          name="zip-code"
+          placeholder="Enter a zip code"
+          maxlength="10"
+          minlength="4"
+          required
+        />
+        <span class="error" aria-live="polite"></span>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          maxlength="150"
+          required
+        />
+        <span class="error" aria-live="polite"></span>
+      </div>
+      <div class="field">
+        <label for="repeat-password">Repeat Password</label>
+        <input
+          type="password"
+          id="repeat-password"
+          name="repeat-password"
+          minlength="8"
+          maxlength="150"
+          required
+        />
+        <span class="error" aria-live="polite"></span>
+      </div>
+      <button type="submit" id="submit-button">Submit</button>
+    </form>
+  </body>
+</html>

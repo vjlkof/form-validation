@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  width: 100px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  color: red;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+input:valid {
+  border: 1px solid green;
+  background-color: rgba(0, 255, 0, 0.1);
+}
+
+input:invalid {
+  border: 1px solid red;
+  background-color: rgba(255, 0, 0, 0.1);
+}
